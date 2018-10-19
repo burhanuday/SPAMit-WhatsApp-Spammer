@@ -61,7 +61,7 @@ public class SPAMit extends InputMethodService implements KeyboardView.OnKeyboar
 
         }else if (counter == 1 && toSend == 1) {
             if (sharedPreferences.getBoolean("last_message", true)) {
-                inputConnection.commitText(getString(R.string.app_share), 1);
+                inputConnection.commitText(" ", 1);
                 inputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
                 inputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
             }
