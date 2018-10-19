@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SPAMit</string>
+    <string name="ad_unit_home_bottom">ca-app-pub-4318189835253436/7669339094</string>
+    <string name="ad_inter">ca-app-pub-4318189835253436/9900325735</string>
+    <string name="home_top">ca-app-pub-4318189835253436/4815945044</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="app_share">Download SPAMit now!</string>
+</resources>

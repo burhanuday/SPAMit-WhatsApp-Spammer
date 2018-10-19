@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "596422301511",
+    "firebase_url": "https://pamit-9be2f.firebaseio.com",
+    "project_id": "pamit-9be2f",
+    "storage_bucket": "pamit-9be2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596422301511:android:47865352eb44a85c",
+        "android_client_info": {
+          "package_name": "com.burhanuday.spamit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596422301511-951nbusso65i5bfjcsftif4o7psqrbea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA088U_YnZwX6vy_imC872Vo6aPDmJYTwM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
