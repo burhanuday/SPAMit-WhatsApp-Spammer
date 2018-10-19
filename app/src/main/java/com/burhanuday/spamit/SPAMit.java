@@ -53,7 +53,7 @@ public class SPAMit extends InputMethodService implements KeyboardView.OnKeyboar
 
         if(counter>1 && toSend == 1){
             counter--;
-            sharedPreferences.edit().putInt("counter", counter).commit();
+            sharedPreferences.edit().putInt("counter", counter).apply();
 
             inputConnection.commitText(message, 1);
             inputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
@@ -66,9 +66,9 @@ public class SPAMit extends InputMethodService implements KeyboardView.OnKeyboar
                 inputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
             }
             counter--;
-            sharedPreferences.edit().putInt("counter", counter).commit();
+            sharedPreferences.edit().putInt("counter", counter).apply();
         }else{
-            sharedPreferences.edit().putInt("toSend", 0).commit();
+            sharedPreferences.edit().putInt("toSend", 0).apply();
         }
 
         return kv;
@@ -98,8 +98,8 @@ public class SPAMit extends InputMethodService implements KeyboardView.OnKeyboar
                 //send button
                 message = sharedPreferences.getString("message", "check this out!");
                 count = sharedPreferences.getInt("count", 30);
-                sharedPreferences.edit().putInt("toSend", 1).commit();
-                sharedPreferences.edit().putInt("counter", count).commit();
+                sharedPreferences.edit().putInt("toSend", 1).apply();
+                sharedPreferences.edit().putInt("counter", count).apply();
                 ic.commitText(message, 1);
                 ic.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
                 ic.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));

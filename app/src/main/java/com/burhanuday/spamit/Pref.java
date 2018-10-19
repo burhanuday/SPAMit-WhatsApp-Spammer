@@ -44,14 +44,14 @@ public class Pref extends AppCompatActivity {
         vibrate.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                sharedPreferences.edit().putBoolean("vibrate", b).commit();
+                sharedPreferences.edit().putBoolean("vibrate", b).apply();
             }
         });
 
         last_message.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                sharedPreferences.edit().putBoolean("last_message", b).commit();
+                sharedPreferences.edit().putBoolean("last_message", b).apply();
             }
         });
     }
